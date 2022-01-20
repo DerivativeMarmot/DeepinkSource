@@ -1,19 +1,18 @@
 {
-    "name": "读书369[名著]",
-    "url": "www.dushu369.com",
+    "name": "笔趣库",
+    "url": "www.biquku.la",
     "version": 100,
     "search": {
-        "url": "http://www.dushu369.com/book/search.asp@post->Keyword=${key}&select=Article&Submit=%CB%D1%CB%F7&Field=Title",
-        "charset": "gb2312",
-        "list": ".listdlmid .a0",
-        "name": "a",
-        "author": "",
+        "url": "http://www.biquku.la/modules/article/search.php@post->searchkey=${key}",
+		"charset": "utf-8",
+        "list": "tbody>tr:nth-child(n+2)",
+        "name": "td:nth-child(1)>a",
+        "author": "td:nth-child(3)",
         "cover": "",
-        "summary": "",
-        "detail": "a"
+        "detail": "td:nth-child(1)>a"
     },
     "detail": {
-        "name": "meta[property=og:book_name]@attr->content",
+        "name": "meta[property=og:novel:book_name]@attr->content",
         "author": "meta[property=og:novel:author]@attr->content",
         "cover": "meta[property=og:image]@attr->content",
         "summary": "meta[property=og:description]@attr->content",
@@ -23,11 +22,11 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "tbody >tr>td",
-        "name": ".a0",
-        "chapter": ".a0"
+        "list": "#list>dl>dd",
+        "name": "a",
+        "chapter": "a"
     },
     "chapter": {
-        "content": ".content"
+        "content": "#content"
     }
 }

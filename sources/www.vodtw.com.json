@@ -1,16 +1,16 @@
 {
-    "name": "读书369[名著]",
-    "url": "www.dushu369.com",
+    "name": "品书网",
+    "url": "www.vodtw.com",
     "version": 100,
     "search": {
-        "url": "http://www.dushu369.com/book/search.asp@post->Keyword=${key}&select=Article&Submit=%CB%D1%CB%F7&Field=Title",
+        "url": "https://www.vodtw.com/Book/Search.aspx?SearchKey=${key}&SearchClass=1",
         "charset": "gb2312",
-        "list": ".listdlmid .a0",
-        "name": "a",
-        "author": "",
+        "list": "#CListTitle",
+        "name": "a:nth-child(1)",
+        "author": "a:nth-child(2)",
         "cover": "",
         "summary": "",
-        "detail": "a"
+        "detail": "a:nth-child(1)"
     },
     "detail": {
         "name": "meta[property=og:book_name]@attr->content",
@@ -23,11 +23,11 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "tbody >tr>td",
-        "name": ".a0",
-        "chapter": ".a0"
+        "list": ".insert_list > dl > dd > ul >li",
+        "name": "a",
+        "chapter": "a"
     },
     "chapter": {
-        "content": ".content"
+        "content": "#BookText"
     }
 }
