@@ -1,2 +1,5 @@
-https://github.com/Wenmoux/sources/blob/master/Wen.json
-https://github.com/gapplef/houmo/blob/master/repository.json
+github
+ Wenmoux, gapplef, fangyk-rel, Orokapei, atozed77
+
+gitee
+  xhm_sy
