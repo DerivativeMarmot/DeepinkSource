@@ -1,7 +1,7 @@
 {
-    "name": "读书369",
+    "name": "读书369[名著]",
     "url": "www.dushu369.com",
-    "version": 130,
+    "version": 100,
     "search": {
         "url": "http://www.dushu369.com/book/search.asp@post->Keyword=${key}&select=Article&Submit=%CB%D1%CB%F7&Field=Title",
         "charset": "gb2312",
