@@ -1,7 +1,7 @@
 {
     "name": "九桃小说",
     "url": "www.9txs.com",
-    "version": 130,
+    "version": 101,
     "search": {
         "url": "https://www.9txs.com/search.html@post->searchkey=${key}",
         "list": "ul.library > li",

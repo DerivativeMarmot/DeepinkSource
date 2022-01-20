@@ -1,9 +1,9 @@
 {
-    "name": "笔趣阁",
-    "url": "www.biquge.com.cn",
+    "name": "八戒中文",
+    "url": "www.8jzw.com",
     "version": 101,
     "search": {
-        "url": "https://www.biquge.com.cn/search.php?q=${key}",
+        "url": "http://www.8jzw.com/search.php?q=${key}",
         "charset": "utf-8",
         "list": ".result-item.result-game-item",
         "name": "h3 > a",
